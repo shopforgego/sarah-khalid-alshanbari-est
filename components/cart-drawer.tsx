@@ -34,12 +34,12 @@ export function CartDrawer() {
                 {/* Header */}
                 <div className="flex items-center justify-between border-b border-border px-5 py-4">
                     <div className="flex items-center gap-3">
-                        <ShoppingCart className="h-5 w-5 text-gold" />
+                        <ShoppingCart className="h-5 w-5 text-accent" />
                         <h2 className="text-lg font-bold text-foreground">
                             {t({ ar: "سلة المشتريات", en: "Shopping Cart" })}
                         </h2>
                         {totalItems > 0 && (
-                            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-gold text-xs font-bold text-foreground">
+                            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-accent text-xs font-bold text-accent-foreground">
                                 {totalItems}
                             </span>
                         )}
@@ -54,8 +54,8 @@ export function CartDrawer() {
                     {items.length === 0 ? (
                         /* Empty state */
                         <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 py-12 text-center">
-                            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gold/10">
-                                <ShoppingCart className="h-10 w-10 text-gold/60" />
+                            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-accent/10">
+                                <ShoppingCart className="h-10 w-10 text-accent/60" />
                             </div>
                             <p className="text-lg font-semibold text-foreground">
                                 {t({ ar: "سلتك فارغة", en: "Your cart is empty" })}
@@ -65,7 +65,6 @@ export function CartDrawer() {
                             </p>
                             <Button
                                 onClick={closeCart}
-                                className="mt-2 bg-gold text-foreground hover:bg-gold-light"
                             >
                                 {t({ ar: "تصفح المنتجات", en: "Browse Products" })}
                             </Button>
@@ -110,7 +109,7 @@ export function CartDrawer() {
                                                 <div className="flex items-center gap-1 rounded-lg border border-border">
                                                     <button
                                                         onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
-                                                        className="flex h-7 w-7 items-center justify-center rounded-s-lg text-muted-foreground transition-colors hover:bg-gold/10 hover:text-gold"
+                                                        className="flex h-7 w-7 items-center justify-center rounded-s-lg text-muted-foreground transition-colors hover:bg-accent/10 hover:text-accent"
                                                         aria-label="Decrease quantity"
                                                     >
                                                         <Minus className="h-3 w-3" />
@@ -120,7 +119,7 @@ export function CartDrawer() {
                                                     </span>
                                                     <button
                                                         onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
-                                                        className="flex h-7 w-7 items-center justify-center rounded-e-lg text-muted-foreground transition-colors hover:bg-gold/10 hover:text-gold"
+                                                        className="flex h-7 w-7 items-center justify-center rounded-e-lg text-muted-foreground transition-colors hover:bg-accent/10 hover:text-accent"
                                                         aria-label="Increase quantity"
                                                     >
                                                         <Plus className="h-3 w-3" />
@@ -156,7 +155,7 @@ export function CartDrawer() {
                                         closeCart()
                                         router.push("/checkout")
                                     }}
-                                    className="flex items-center justify-center gap-2 rounded-xl bg-gold text-foreground hover:bg-gold-light px-4 py-6 text-sm font-bold transition-opacity active:scale-[0.98] cursor-pointer"
+                                    className="flex items-center justify-center gap-2 rounded-xl px-4 py-6 text-sm font-bold transition-opacity active:scale-[0.98] cursor-pointer"
                                 >
                                     <CreditCard className="h-5 w-5" />
                                     {t({ ar: "إتمام الدفع الإلكتروني", en: "Proceed to Checkout" })}

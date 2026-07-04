@@ -17,7 +17,7 @@ export function HeroSection() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           {/* Content */}
           <div className="relative z-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-medium text-gold">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-xs font-medium text-accent">
               {t({ ar: "عروض حصرية", en: "Exclusive Offers" })}
             </div>
             <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
@@ -42,13 +42,13 @@ export function HeroSection() {
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link href="/products">
-                <Button className="gap-2 bg-gold text-foreground hover:bg-gold-light">
+                <Button className="gap-2">
                   {t({ ar: "تسوق الآن", en: "Shop Now" })}
                   <Arrow className="h-4 w-4" />
                 </Button>
               </Link>
               <a href={`tel:${STORE_INFO.phone}`}>
-                <Button variant="outline" className="gap-2 border-border text-foreground hover:border-gold hover:text-gold">
+                <Button variant="outline" className="gap-2 border-border text-foreground hover:border-accent hover:text-accent">
                   <Phone className="h-4 w-4" />
                   {t({ ar: "اتصل بنا", en: "Call Us" })}
                 </Button>
@@ -86,11 +86,11 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-card/60 to-transparent" />
             </div>
             {/* Promo badge */}
-            <div className="absolute -bottom-4 start-4 rounded-xl bg-gold px-5 py-3 text-center shadow-lg sm:start-8">
-              <p className="text-2xl font-bold text-foreground">
+            <div className="absolute -bottom-4 start-4 rounded-xl bg-accent px-5 py-3 text-center shadow-lg sm:start-8">
+              <p className="text-2xl font-bold text-accent-foreground">
                 {t({ ar: "خصم حتى", en: "Up to" })}
               </p>
-              <p className="text-3xl font-black text-foreground">68%</p>
+              <p className="text-3xl font-black text-accent-foreground">68%</p>
             </div>
           </div>
         </div>

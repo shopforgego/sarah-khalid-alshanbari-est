@@ -29,7 +29,7 @@ export function FeaturedProducts() {
             </p>
           </div>
           <Link href="/products">
-            <Button variant="ghost" className="gap-2 text-gold hover:text-gold-light">
+            <Button variant="ghost" className="gap-2 text-accent hover:text-accent/80">
               {t({ ar: "عرض الكل", en: "View All" })}
               <Arrow className="h-4 w-4" />
             </Button>

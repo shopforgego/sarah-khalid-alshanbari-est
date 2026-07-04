@@ -28,7 +28,7 @@ export function CategoriesSection() {
             <Link
               key={cat.id}
               href={`/products?category=${cat.id}`}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-gold/40 hover:shadow-lg hover:shadow-gold/5"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5"
             >
               <div className="relative aspect-square">
                 <Image

@@ -43,27 +43,27 @@ export function SiteFooter() {
             </h3>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link href="/" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                <Link href="/" className="text-sm text-muted-foreground transition-colors hover:text-accent">
                   {t({ ar: "الرئيسية", en: "Home" })}
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                <Link href="/products" className="text-sm text-muted-foreground transition-colors hover:text-accent">
                   {t({ ar: "المنتجات", en: "Products" })}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                <Link href="/contact" className="text-sm text-muted-foreground transition-colors hover:text-accent">
                   {t({ ar: "تواصل معنا", en: "Contact Us" })}
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                <Link href="/terms" className="text-sm text-muted-foreground transition-colors hover:text-accent">
                   {t({ ar: "الشروط والأحكام", en: "Terms & Conditions" })}
                 </Link>
               </li>
               <li>
-                <Link href="/privacy-policy" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                <Link href="/privacy-policy" className="text-sm text-muted-foreground transition-colors hover:text-accent">
                   {t({ ar: "سياسة الخصوصية والاسترداد", en: "Privacy & Refund Policy" })}
                 </Link>
               </li>
@@ -77,17 +77,17 @@ export function SiteFooter() {
             </h3>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link href="/products?category=shoes" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                <Link href="/products?category=shoes" className="text-sm text-muted-foreground transition-colors hover:text-accent">
                   {t({ ar: "أحذية رجالية", en: "Men's Shoes" })}
                 </Link>
               </li>
               <li>
-                <Link href="/products?category=bags" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                <Link href="/products?category=bags" className="text-sm text-muted-foreground transition-colors hover:text-accent">
                   {t({ ar: "حقائب سفر", en: "Travel Bags" })}
                 </Link>
               </li>
               <li>
-                <Link href="/products?category=accessories" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                <Link href="/products?category=accessories" className="text-sm text-muted-foreground transition-colors hover:text-accent">
                   {t({ ar: "إكسسوارات", en: "Accessories" })}
                 </Link>
               </li>
@@ -101,19 +101,19 @@ export function SiteFooter() {
             </h3>
             <ul className="flex flex-col gap-3">
               <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-gold" />
-                <a href={`tel:${STORE_INFO.phone}`} className="text-sm text-muted-foreground transition-colors hover:text-gold" dir="ltr">
+                <Phone className="h-4 w-4 text-accent" />
+                <a href={`tel:${STORE_INFO.phone}`} className="text-sm text-muted-foreground transition-colors hover:text-accent" dir="ltr">
                   {STORE_INFO.phone}
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-gold" />
-                <a href={`mailto:${STORE_INFO.emails[0]}`} className="text-sm text-muted-foreground transition-colors hover:text-gold" dir="ltr">
+                <Mail className="h-4 w-4 text-accent" />
+                <a href={`mailto:${STORE_INFO.emails[0]}`} className="text-sm text-muted-foreground transition-colors hover:text-accent" dir="ltr">
                   {STORE_INFO.emails[0]}
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 shrink-0 text-gold" />
+                <MapPin className="h-4 w-4 shrink-0 text-accent" />
                 <span className="text-sm text-muted-foreground">
                   {t(STORE_INFO.address)}
                 </span>
@@ -141,7 +141,7 @@ export function SiteFooter() {
             </a>
             <a
               href={`tel:${STORE_INFO.phone}`}
-              className="text-xs text-muted-foreground transition-colors hover:text-gold"
+              className="text-xs text-muted-foreground transition-colors hover:text-accent"
             >
               {t({ ar: "اتصل بنا", en: "Call Us" })}
             </a>

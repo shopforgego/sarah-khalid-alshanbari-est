@@ -45,10 +45,10 @@ export function ContactContent() {
           {/* Phone */}
           <a
             href={`tel:${STORE_INFO.phone}`}
-            className="flex items-center gap-4 rounded-xl border border-border bg-card p-6 transition-all hover:border-gold/40 hover:shadow-lg hover:shadow-gold/5"
+            className="flex items-center gap-4 rounded-xl border border-border bg-card p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5"
           >
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/10">
-              <Phone className="h-5 w-5 text-gold" />
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10">
+              <Phone className="h-5 w-5 text-accent" />
             </div>
             <div>
               <p className="text-sm font-bold text-foreground">
@@ -81,10 +81,10 @@ export function ContactContent() {
             <a
               key={email}
               href={`mailto:${email}`}
-              className="flex items-center gap-4 rounded-xl border border-border bg-card p-6 transition-all hover:border-gold/40 hover:shadow-lg hover:shadow-gold/5"
+              className="flex items-center gap-4 rounded-xl border border-border bg-card p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5"
             >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/10">
-                <Mail className="h-5 w-5 text-gold" />
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10">
+                <Mail className="h-5 w-5 text-accent" />
               </div>
               <div>
                 <p className="text-sm font-bold text-foreground">
@@ -97,8 +97,8 @@ export function ContactContent() {
 
           {/* Location */}
           <div className="flex items-start gap-4 rounded-xl border border-border bg-card p-6">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/10">
-              <MapPin className="h-5 w-5 text-gold" />
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10">
+              <MapPin className="h-5 w-5 text-accent" />
             </div>
             <div>
               <p className="text-sm font-bold text-foreground">
@@ -113,8 +113,8 @@ export function ContactContent() {
 
           {/* Building Info */}
           <div className="flex items-start gap-4 rounded-xl border border-border bg-card p-6">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/10">
-              <Building className="h-5 w-5 text-gold" />
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10">
+              <Building className="h-5 w-5 text-accent" />
             </div>
             <div>
               <p className="text-sm font-bold text-foreground">
@@ -131,8 +131,8 @@ export function ContactContent() {
 
           {/* Working Hours */}
           <div className="flex items-start gap-4 rounded-xl border border-border bg-card p-6">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/10">
-              <Clock className="h-5 w-5 text-gold" />
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent/10">
+              <Clock className="h-5 w-5 text-accent" />
             </div>
             <div>
               <p className="text-sm font-bold text-foreground">
@@ -166,7 +166,7 @@ export function ContactContent() {
           </div>
 
           {/* CTA Card */}
-          <div className="rounded-xl border border-gold/30 bg-gold/5 p-8 text-center">
+          <div className="rounded-xl border border-accent/30 bg-accent/5 p-8 text-center">
             <h3 className="text-xl font-bold text-foreground">
               {t({ ar: "هل تحتاج مساعدة؟", en: "Need Help?" })}
             </h3>

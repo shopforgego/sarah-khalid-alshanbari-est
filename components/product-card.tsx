@@ -28,10 +28,10 @@ export function ProductCard({ product }: { product: Product }) {
   }
 
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-gold/40 hover:shadow-lg hover:shadow-gold/5">
+    <div className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
       {/* Badge */}
       {product.badge && (
-        <Badge className="absolute start-3 top-3 z-10 bg-gold text-foreground hover:bg-gold-light">
+        <Badge className="absolute start-3 top-3 z-10 bg-accent text-accent-foreground hover:bg-accent/80">
           {t(product.badge)}
         </Badge>
       )}
@@ -52,7 +52,7 @@ export function ProductCard({ product }: { product: Product }) {
       {/* Info */}
       <div className="p-4">
         <Link href={`/products/${product.id}`}>
-          <h3 className="text-sm font-bold text-foreground transition-colors group-hover:text-gold">
+          <h3 className="text-sm font-bold text-foreground transition-colors group-hover:text-accent">
             {t(product.name)}
           </h3>
         </Link>
@@ -76,7 +76,7 @@ export function ProductCard({ product }: { product: Product }) {
         <div className="mt-3 flex gap-2">
           <button
             onClick={handleBuyNow}
-            className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-gold px-3 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-gold-light cursor-pointer"
+            className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-accent px-3 py-2 text-xs font-semibold text-accent-foreground transition-colors hover:bg-accent/90 cursor-pointer"
           >
             <ShoppingBag className="h-3.5 w-3.5" />
             {t({ ar: "شراء الآن", en: "Buy Now" })}
@@ -88,7 +88,7 @@ export function ProductCard({ product }: { product: Product }) {
             aria-label={t({ ar: "أضف للسلة", en: "Add to cart" })}
             className={`flex items-center justify-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-semibold transition-all duration-300 ${added
                 ? "border-green-500 bg-green-500/10 text-green-500"
-                : "border-border bg-card text-muted-foreground hover:border-gold/60 hover:bg-gold/5 hover:text-gold"
+                : "border-border bg-card text-muted-foreground hover:border-accent/60 hover:bg-accent/5 hover:text-accent"
               }`}
           >
             {added ? (
