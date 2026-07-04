@@ -101,7 +101,7 @@ export function ProductsCatalog() {
                 onClick={() => setActiveCategory("all")}
                 className={`rounded-lg px-3 py-2 text-start text-sm transition-colors ${
                   activeCategory === "all"
-                    ? "bg-gold/10 font-semibold text-gold"
+                    ? "bg-accent/10 font-semibold text-accent"
                     : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                 }`}
               >
@@ -113,7 +113,7 @@ export function ProductsCatalog() {
                   onClick={() => setActiveCategory(cat.id)}
                   className={`rounded-lg px-3 py-2 text-start text-sm transition-colors ${
                     activeCategory === cat.id
-                      ? "bg-gold/10 font-semibold text-gold"
+                      ? "bg-accent/10 font-semibold text-accent"
                       : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                   }`}
                 >
@@ -135,7 +135,7 @@ export function ProductsCatalog() {
                   onClick={() => setPriceRange(filter.id)}
                   className={`rounded-lg px-3 py-2 text-start text-sm transition-colors ${
                     priceRange === filter.id
-                      ? "bg-gold/10 font-semibold text-gold"
+                      ? "bg-accent/10 font-semibold text-accent"
                       : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                   }`}
                 >

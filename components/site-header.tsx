@@ -25,19 +25,19 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl">
       {/* Top bar */}
-      <div className="bg-gold text-primary-foreground">
+      <div className="bg-accent text-accent-foreground">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5 text-xs font-medium">
           <a
             href={`tel:${STORE_INFO.phone}`}
-            className="flex items-center gap-1.5 text-foreground"
+            className="flex items-center gap-1.5"
           >
             <Phone className="h-3 w-3" />
             <span dir="ltr">{STORE_INFO.phone}</span>
           </a>
-          <span className="hidden text-foreground sm:block">
+          <span className="hidden sm:block">
             {t(STORE_INFO.direct_payment_discount)}
           </span>
-          <span className="text-foreground">
+          <span>
             {t({ ar: "شحن سريع لجميع أنحاء المملكة", en: "Fast shipping across KSA" })}
           </span>
         </div>
@@ -70,7 +70,7 @@ export function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-gold"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-accent"
             >
               {t(link)}
             </Link>
@@ -83,7 +83,7 @@ export function SiteHeader() {
             variant="ghost"
             size="icon"
             onClick={toggleLang}
-            className="text-muted-foreground hover:text-gold"
+            className="text-muted-foreground hover:text-accent"
             aria-label="Toggle language"
           >
             <Globe className="h-4 w-4" />
@@ -92,7 +92,7 @@ export function SiteHeader() {
             variant="ghost"
             size="icon"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="text-muted-foreground hover:text-gold"
+            className="text-muted-foreground hover:text-accent"
             aria-label="Toggle theme"
           >
             <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -102,12 +102,12 @@ export function SiteHeader() {
             variant="ghost"
             size="icon"
             onClick={openCart}
-            className="relative text-muted-foreground hover:text-gold"
+            className="relative text-muted-foreground hover:text-accent"
             aria-label={t({ ar: "السلة", en: "Cart" })}
           >
             <ShoppingBag className="h-4 w-4" />
             {totalItems > 0 && (
-              <span className="absolute -end-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-gold text-[10px] font-bold text-foreground">
+              <span className="absolute -end-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-[10px] font-bold text-accent-foreground">
                 {totalItems > 9 ? "9+" : totalItems}
               </span>
             )}
@@ -134,7 +134,7 @@ export function SiteHeader() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block py-3 text-sm font-medium text-foreground transition-colors hover:text-gold"
+              className="block py-3 text-sm font-medium text-foreground transition-colors hover:text-accent"
             >
               {t(link)}
             </Link>

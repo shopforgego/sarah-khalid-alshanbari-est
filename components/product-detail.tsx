@@ -42,11 +42,11 @@ export function ProductDetail({ product }: { product: Product }) {
     <div className="mx-auto max-w-7xl px-4 py-8 md:py-12">
       {/* Breadcrumb */}
       <nav className="mb-6 flex items-center gap-2 text-sm text-muted-foreground" aria-label="Breadcrumb">
-        <Link href="/" className="transition-colors hover:text-gold">
+        <Link href="/" className="transition-colors hover:text-accent">
           {t({ ar: "الرئيسية", en: "Home" })}
         </Link>
         <Chevron className="h-3 w-3" />
-        <Link href="/products" className="transition-colors hover:text-gold">
+        <Link href="/products" className="transition-colors hover:text-accent">
           {t({ ar: "المنتجات", en: "Products" })}
         </Link>
         <Chevron className="h-3 w-3" />
@@ -58,7 +58,7 @@ export function ProductDetail({ product }: { product: Product }) {
         {/* Image */}
         <div className="relative aspect-square overflow-hidden rounded-2xl border border-border bg-secondary/30">
           {product.badge && (
-            <Badge className="absolute start-4 top-4 z-10 bg-gold text-foreground hover:bg-gold-light">
+            <Badge className="absolute start-4 top-4 z-10 bg-accent text-accent-foreground hover:bg-accent/80">
               {t(product.badge)}
             </Badge>
           )}
@@ -107,8 +107,8 @@ export function ProductDetail({ product }: { product: Product }) {
               <ul className="flex flex-col gap-3">
                 {product.specs.map((spec, i) => (
                   <li key={i} className="flex items-center gap-3">
-                    <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/10">
-                      <Check className="h-3 w-3 text-gold" />
+                    <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/10">
+                      <Check className="h-3 w-3 text-accent" />
                     </div>
                     <span className="text-sm text-muted-foreground">{t(spec)}</span>
                   </li>
@@ -124,7 +124,7 @@ export function ProductDetail({ product }: { product: Product }) {
               onClick={handleAddToCart}
               className={`flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-bold transition-all duration-300 ${added
                   ? "bg-green-500 text-white"
-                  : "bg-gold text-foreground hover:bg-gold-light active:scale-[0.98]"
+                  : "bg-accent text-accent-foreground hover:bg-accent/90 active:scale-[0.98]"
                 }`}
             >
               {added ? (
@@ -142,7 +142,7 @@ export function ProductDetail({ product }: { product: Product }) {
 
             {/* Buy Now and Call */}
             <div className="flex gap-3">
-              <Button onClick={handleBuyNow} className="flex-1 gap-2 bg-gold text-foreground hover:bg-gold-light cursor-pointer">
+              <Button onClick={handleBuyNow} className="flex-1 gap-2 cursor-pointer">
                 <ShoppingBag className="h-4 w-4" />
                 {t({ ar: "شراء الآن", en: "Buy Now" })}
               </Button>
