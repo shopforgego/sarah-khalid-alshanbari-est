@@ -32,7 +32,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Load items from localStorage on mount
   useEffect(() => {
     try {
-      const stored = localStorage.getItem("arjwan_cart")
+      const stored = localStorage.getItem("sarah_cart")
       if (stored) {
         setItems(JSON.parse(stored))
       }
@@ -46,7 +46,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (isInitialized) {
       try {
-        localStorage.setItem("arjwan_cart", JSON.stringify(items))
+        localStorage.setItem("sarah_cart", JSON.stringify(items))
       } catch (e) {
         console.error("Failed to save cart to localStorage", e)
       }

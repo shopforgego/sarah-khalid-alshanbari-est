@@ -11,8 +11,8 @@ const FEATURES = [
   },
   {
     icon: Shield,
-    title: { ar: "منتجات أصلية", en: "Genuine Products" },
-    description: { ar: "جميع منتجاتنا أصلية 100% مع ضمان", en: "All our products are 100% genuine with warranty" },
+    title: { ar: "جودة عالية", en: "Premium Quality" },
+    description: { ar: "جميع منتجاتنا عالية الجودة ومختارة بعناية", en: "All our products are premium quality and carefully selected" },
   },
   {
     icon: Headphones,

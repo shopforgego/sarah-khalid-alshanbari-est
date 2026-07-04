@@ -203,8 +203,8 @@ export function ContactContent() {
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               {t({
-                ar: "مؤسسة أرجوان أحمد الشريف هي وجهتك المثالية لشراء أحدث الهواتف الذكية والإلكترونيات ومستلزماتها في مكة المكرمة. نحرص على تقديم منتجات أصلية 100% بأسعار تنافسية مع خدمة عملاء متميزة. نوفر شحن سريع لجميع أنحاء المملكة العربية السعودية.",
-                en: "Arjwan Ahmed Al-Sharif Est. is your ultimate destination for purchasing the latest smartphones, electronics, and accessories in Makkah. We ensure 100% genuine products at competitive prices with excellent customer service. We provide fast shipping across the Kingdom of Saudi Arabia.",
+                ar: "مؤسسة سارة خالد الشنبري هي وجهتك المثالية لشراء أحدث الملابس والأحذية وحقائب السفر والإكسسوارات. نحرص على تقديم منتجات عالية الجودة بأسعار تنافسية مع خدمة عملاء متميزة. نوفر شحن سريع لجميع أنحاء المملكة العربية السعودية.",
+                en: "Sarah Khalid Al-Shanbari Est. is your ultimate destination for purchasing the latest clothing, shoes, travel bags, and accessories. We ensure high-quality products at competitive prices with excellent customer service. We provide fast shipping across the Kingdom of Saudi Arabia.",
               })}
             </p>
           </div>

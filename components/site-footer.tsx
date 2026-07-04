@@ -30,8 +30,8 @@ export function SiteFooter() {
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               {t({
-                ar: "مؤسستك الموثوقة للهواتف الذكية والإلكترونيات ومستلزماتها في مكة المكرمة. نقدم أفضل المنتجات بأسعار تنافسية.",
-                en: "Your trusted establishment for smartphones, electronics & accessories in Makkah. We offer the best products at competitive prices.",
+                ar: "مؤسستك الموثوقة للملابس والأحذية وحقائب السفر والإكسسوارات. نقدم أفضل المنتجات بأسعار تنافسية مع شحن سريع لجميع أنحاء المملكة.",
+                en: "Your trusted establishment for clothing, shoes, travel bags & accessories. We offer the best products at competitive prices with fast shipping across KSA.",
               })}
             </p>
           </div>
@@ -77,23 +77,18 @@ export function SiteFooter() {
             </h3>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link href="/products?category=iphones" className="text-sm text-muted-foreground transition-colors hover:text-gold">
-                  {t({ ar: "أجهزة آيفون", en: "iPhones" })}
+                <Link href="/products?category=shoes" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                  {t({ ar: "أحذية رجالية", en: "Men's Shoes" })}
                 </Link>
               </li>
               <li>
-                <Link href="/products?category=samsung" className="text-sm text-muted-foreground transition-colors hover:text-gold">
-                  {t({ ar: "أجهزة سامسونج", en: "Samsung" })}
+                <Link href="/products?category=bags" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                  {t({ ar: "حقائب سفر", en: "Travel Bags" })}
                 </Link>
               </li>
               <li>
-                <Link href="/products?category=airpods" className="text-sm text-muted-foreground transition-colors hover:text-gold">
-                  {t({ ar: "سماعات", en: "Earphones" })}
-                </Link>
-              </li>
-              <li>
-                <Link href="/products?category=smartwatches" className="text-sm text-muted-foreground transition-colors hover:text-gold">
-                  {t({ ar: "ساعات ذكية", en: "Smart Watches" })}
+                <Link href="/products?category=accessories" className="text-sm text-muted-foreground transition-colors hover:text-gold">
+                  {t({ ar: "إكسسوارات", en: "Accessories" })}
                 </Link>
               </li>
             </ul>
@@ -131,8 +126,8 @@ export function SiteFooter() {
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 sm:flex-row">
           <p className="text-xs text-muted-foreground">
             {t({
-              ar: `© ${new Date().getFullYear()} مؤسسة أرجوان أحمد الشريف. جميع الحقوق محفوظة.`,
-              en: `© ${new Date().getFullYear()} Arjwan Ahmed Al-Sharif Est. All rights reserved.`,
+              ar: `© ${new Date().getFullYear()} مؤسسة سارة خالد الشنبري. جميع الحقوق محفوظة.`,
+              en: `© ${new Date().getFullYear()} Sarah Khalid Al-Shanbari Est. All rights reserved.`,
             })}
           </p>
           <div className="flex items-center gap-4">

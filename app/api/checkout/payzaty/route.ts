@@ -50,8 +50,8 @@ export async function POST(request: Request) {
       language: "ar",
       reference: orderRef,
       customer: {
-        name: customer.name || "عميل أرجوان",
-        email: customer.email || "customer@arjwan.store",
+        name: customer.name || "عميل المتجر",
+        email: customer.email || "customer@sarahshanbari.store",
         phone: phone,
       },
       response_url: responseUrl,
