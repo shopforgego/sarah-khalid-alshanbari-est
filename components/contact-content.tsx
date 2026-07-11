@@ -203,8 +203,8 @@ export function ContactContent() {
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               {t({
-                ar: "مؤسسة سارة خالد الشنبري هي وجهتك المثالية لشراء أحدث الملابس والأحذية وحقائب السفر والإكسسوارات. نحرص على تقديم منتجات عالية الجودة بأسعار تنافسية مع خدمة عملاء متميزة. نوفر شحن سريع لجميع أنحاء المملكة العربية السعودية.",
-                en: "Sarah Khalid Al-Shanbari Est. is your ultimate destination for purchasing the latest clothing, shoes, travel bags, and accessories. We ensure high-quality products at competitive prices with excellent customer service. We provide fast shipping across the Kingdom of Saudi Arabia.",
+                ar: "مؤسسة عبير رده الصاملى الشريف هي وجهتك المثالية لشراء أحدث الملابس والأحذية وحقائب السفر والإكسسوارات. نحرص على تقديم منتجات عالية الجودة بأسعار تنافسية مع خدمة عملاء متميزة. نوفر شحن سريع لجميع أنحاء المملكة العربية السعودية.",
+                en: "Abeer Reddeh Alsameli Est. is your ultimate destination for purchasing the latest clothing, shoes, travel bags, and accessories. We ensure high-quality products at competitive prices with excellent customer service. We provide fast shipping across the Kingdom of Saudi Arabia.",
               })}
             </p>
           </div>

@@ -70,8 +70,8 @@ function StatusContent() {
             
             <p className="text-muted-foreground text-sm max-w-sm mb-6 leading-relaxed">
               {t({ 
-                ar: "شكراً لك لتسوقك من مؤسسة سارة خالد الشنبري. تم تسجيل طلبك وتأكيد عملية الدفع بنجاح.",
-                en: "Thank you for shopping at Sarah Khalid Al-Shanbari Est. Your payment has been received and order registered."
+                ar: "شكراً لك لتسوقك من مؤسسة عبير رده الصاملى الشريف. تم تسجيل طلبك وتأكيد عملية الدفع بنجاح.",
+                en: "Thank you for shopping at Abeer Reddeh Alsameli Est. Your payment has been received and order registered."
               })}
             </p>
 

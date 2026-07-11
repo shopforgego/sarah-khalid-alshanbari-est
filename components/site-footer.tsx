@@ -126,8 +126,8 @@ export function SiteFooter() {
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 sm:flex-row">
           <p className="text-xs text-muted-foreground">
             {t({
-              ar: `© ${new Date().getFullYear()} مؤسسة سارة خالد الشنبري. جميع الحقوق محفوظة.`,
-              en: `© ${new Date().getFullYear()} Sarah Khalid Al-Shanbari Est. All rights reserved.`,
+              ar: `© ${new Date().getFullYear()} مؤسسة عبير رده الصاملى الشريف. جميع الحقوق محفوظة.`,
+              en: `© ${new Date().getFullYear()} Abeer Reddeh Alsameli Est. All rights reserved.`,
             })}
           </p>
           <div className="flex items-center gap-4">

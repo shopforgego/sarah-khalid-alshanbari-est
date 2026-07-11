@@ -1,27 +1,28 @@
 export const STORE_INFO = {
   name: {
-    ar: "مؤسسة سارة خالد الشنبري",
-    en: "Sarah Khalid Al-Shanbari Est.",
+    ar: "مؤسسة عبير رده الصاملى الشريف",
+    en: "Abeer Reddeh Alsameli Est.",
   },
   tagline: {
     ar: "ملابس وإكسسوارات وحقائب",
     en: "Clothing, Accessories & Bags",
   },
-  phone: "0566235108",
-  whatsapp: "966566235108",
-  emails: ["sarah.shanbari@gmail.com"],
+  phone: "0569927502",
+  whatsapp: "966569927502",
+  emails: ["adeer543654@gmai.com"],
   address: {
-    ar: "المملكة العربية السعودية",
-    en: "Kingdom of Saudi Arabia",
+    ar: "حي ضاحية الملك فهد، شارع 35ب، الدمام، المملكة العربية السعودية",
+    en: "Dahiyat Al Malik Fahd Dist., Street 35B, Dammam, Kingdom of Saudi Arabia",
   },
   direct_payment_discount: {
     ar: "وفر أكثر مع الدفع المباشر واحصل على خصم تلقائي 5% يصل إلى 500 ريال",
     en: "Save more with direct payment! Get 5% automatic discount up to 500 SAR"
   },
-
-  postalCode: "00000",
-  buildingNo: "0000",
-  additionalNo: "0000",
+  shortAddress: "EHAB9205",
+  postalCode: "32514",
+  buildingNo: "9205",
+  additionalNo: "4569",
+  commercialRegNo: "7053322710",
 } as const
 
 export type Product = {

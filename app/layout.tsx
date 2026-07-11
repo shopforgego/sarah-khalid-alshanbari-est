@@ -12,8 +12,8 @@ const _geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono
 const _notoKufiArabic = Noto_Kufi_Arabic({ subsets: ["arabic"], variable: "--font-noto-kufi-arabic", weight: ["300", "400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: 'Sarah Khalid Al-Shanbari Est. | مؤسسة سارة خالد الشنبري',
-  description: 'مؤسسة سارة خالد الشنبري - ملابس وإكسسوارات وحقائب | Sarah Khalid Al-Shanbari Est. - Clothing, Accessories & Bags in Saudi Arabia',
+  title: 'Abeer Reddeh Alsameli Est. | مؤسسة عبير رده الصاملى الشريف',
+  description: 'مؤسسة عبير رده الصاملى الشريف - ملابس وإكسسوارات وحقائب | Abeer Reddeh Alsameli Est. - Clothing, Accessories & Bags in Saudi Arabia',
   generator: 'v0.app',
   keywords: ['ملابس', 'أحذية', 'حقائب', 'إكسسوارات', 'clothing', 'shoes', 'bags', 'accessories', 'Saudi Arabia', 'سعودية'],
   icons: {
